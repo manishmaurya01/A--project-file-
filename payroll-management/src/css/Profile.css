@@ -1,0 +1,41 @@
+.profile-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .profile-table h3 {
+    margin-top: 40px;
+    color: #34495e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .profile-table table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .profile-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #34495e;
+  }
+  
+  .profile-table th {
+    background-color: #f4f6f7;
+    font-weight: bold;
+  }
+  
+  .profile-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
