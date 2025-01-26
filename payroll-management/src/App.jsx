@@ -10,6 +10,7 @@ import TaxDeclaration from './components/TaxDeclaration'; // Tax Declaration com
 import Profile from './components/Profile'; // Profile component
 import './App.css'; // Import your app styles
 import EditProfile from "./components/EditProfile";
+import Attendance from "./components/Attendance";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/tax-declaration" element={isLoggedIn ? <TaxDeclaration /> : <Auth setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/profile" element={isLoggedIn ? <Profile /> : <Auth setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/attendance" element={<Attendance />} />
       </Routes>
     </Router>
   );

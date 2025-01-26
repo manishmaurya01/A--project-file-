@@ -23,6 +23,10 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     }
   };
 
+  const handleAttendanceClick = () => {
+    navigate("/attendance"); // Navigate to the Attendance component
+  };
+
   return (
     <div className="dashboard">
       {/* Use Navbar Component */}
@@ -37,6 +41,7 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
         <div className="body">
           <h2>Welcome to the Dashboard</h2>
           <p>Select a section from the navbar to get started.</p>
+          <button onClick={handleAttendanceClick}>Track Your Attendance</button>
         </div>
       </div>
     </div>
